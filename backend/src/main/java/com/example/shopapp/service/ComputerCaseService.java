@@ -16,4 +16,8 @@ public class ComputerCaseService {
     public List<ComputerCase> findAllComputerCases(){
         return (List<ComputerCase>) computerCaseRepository.findAll();
     }
+
+    public ComputerCase findComputerCaseById(int id) { return computerCaseRepository.findById(id).orElse(null); }
+
+    public void save(ComputerCase computerCase){ computerCaseRepository.save(computerCase); }
 }
