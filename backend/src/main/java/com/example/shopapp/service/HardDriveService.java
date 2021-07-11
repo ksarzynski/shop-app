@@ -13,11 +13,11 @@ public class HardDriveService {
 
     private final HardDriveRepository hardDriveRepository;
 
-    public List<HardDrive> findAllHardDrives(){
+    public List<HardDrive> findAll(){
         return (List<HardDrive>) hardDriveRepository.findAll();
     }
 
-    public HardDrive findHardDriveById(int id) { return hardDriveRepository.findById(id).orElse(null); }
+    public HardDrive find(int id) { return hardDriveRepository.findById(id).orElse(null); }
 
     public void save(HardDrive hardDrive){ hardDriveRepository.save(hardDrive); }
 }

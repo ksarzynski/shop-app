@@ -13,9 +13,9 @@ public class RAMService {
 
     private final RAMRepository ramRepository;
 
-    public List<RAM> findAllPowerSupplies(){ return (List<RAM>) ramRepository.findAll(); }
+    public List<RAM> findAll(){ return (List<RAM>) ramRepository.findAll(); }
 
-    public RAM findPowerSupplyById(int id) { return ramRepository.findById(id).orElse(null); }
+    public RAM find(int id) { return ramRepository.findById(id).orElse(null); }
 
     public void save(RAM powerSupply){ ramRepository.save(powerSupply); }
 }

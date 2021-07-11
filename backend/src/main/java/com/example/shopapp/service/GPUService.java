@@ -13,11 +13,11 @@ public class GPUService {
 
     private final GPURepository gpuRepository;
 
-    public List<GPU> findAllGPUs(){
+    public List<GPU> findAll(){
         return (List<GPU>) gpuRepository.findAll();
     }
 
-    public GPU findGPUById(int id) { return gpuRepository.findById(id).orElse(null); }
+    public GPU find(int id) { return gpuRepository.findById(id).orElse(null); }
 
     public void save(GPU gpu){ gpuRepository.save(gpu); }
 }

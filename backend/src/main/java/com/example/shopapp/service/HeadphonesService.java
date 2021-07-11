@@ -13,9 +13,9 @@ public class HeadphonesService {
 
     private final HeadphonesRepository headphonesRepository;
 
-    public List<Headphones> findAllHeadphones(){ return (List<Headphones>) headphonesRepository.findAll(); }
+    public List<Headphones> findAll(){ return (List<Headphones>) headphonesRepository.findAll(); }
 
-    public Headphones findHeadphonesById(int id) { return headphonesRepository.findById(id).orElse(null); }
+    public Headphones find(int id) { return headphonesRepository.findById(id).orElse(null); }
 
     public void save(Headphones headphones){ headphonesRepository.save(headphones); }
 }

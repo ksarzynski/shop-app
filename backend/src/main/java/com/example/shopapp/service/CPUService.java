@@ -13,11 +13,11 @@ public class CPUService {
 
     private final CPURepository cpuRepository;
 
-    public List<CPU> findAllCPUs(){
+    public List<CPU> findAll(){
         return (List<CPU>) cpuRepository.findAll();
     }
 
-    public CPU findCPUById(int id) { return cpuRepository.findById(id).orElse(null); }
+    public CPU find(int id) { return cpuRepository.findById(id).orElse(null); }
 
     public void save(CPU cpu){ cpuRepository.save(cpu); }
 }

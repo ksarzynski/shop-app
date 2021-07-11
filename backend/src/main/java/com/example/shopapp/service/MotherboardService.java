@@ -13,9 +13,9 @@ public class MotherboardService {
 
     private final MotherboardRepository motherboardRepository;
 
-    public List<Motherboard> findAllMotherboards(){ return (List<Motherboard>) motherboardRepository.findAll(); }
+    public List<Motherboard> findAll(){ return (List<Motherboard>) motherboardRepository.findAll(); }
 
-    public Motherboard findMotherboardById(int id) { return motherboardRepository.findById(id).orElse(null); }
+    public Motherboard find(int id) { return motherboardRepository.findById(id).orElse(null); }
 
     public void save(Motherboard motherboard){ motherboardRepository.save(motherboard); }
 }

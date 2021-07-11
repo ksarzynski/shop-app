@@ -13,11 +13,11 @@ public class ComputerCaseService {
 
     private final ComputerCaseRepository computerCaseRepository;
 
-    public List<ComputerCase> findAllComputerCases(){
+    public List<ComputerCase> findAll(){
         return (List<ComputerCase>) computerCaseRepository.findAll();
     }
 
-    public ComputerCase findComputerCaseById(int id) { return computerCaseRepository.findById(id).orElse(null); }
+    public ComputerCase find(int id) { return computerCaseRepository.findById(id).orElse(null); }
 
     public void save(ComputerCase computerCase){ computerCaseRepository.save(computerCase); }
 }

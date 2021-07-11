@@ -13,9 +13,9 @@ public class MouseService {
 
     private final MouseRepository mouseRepository;
 
-    public List<Mouse> findAllMouse(){ return (List<Mouse>) mouseRepository.findAll(); }
+    public List<Mouse> findAll(){ return (List<Mouse>) mouseRepository.findAll(); }
 
-    public Mouse findMouseById(int id) { return mouseRepository.findById(id).orElse(null); }
+    public Mouse find(int id) { return mouseRepository.findById(id).orElse(null); }
 
     public void save(Mouse mouse){ mouseRepository.save(mouse); }
 }

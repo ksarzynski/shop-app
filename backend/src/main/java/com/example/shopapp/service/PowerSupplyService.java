@@ -13,9 +13,9 @@ public class PowerSupplyService {
 
     private final PowerSupplyRepository powerSupplyRepository;
 
-    public List<PowerSupply> findAllPowerSupplies(){ return (List<PowerSupply>) powerSupplyRepository.findAll(); }
+    public List<PowerSupply> findAll(){ return (List<PowerSupply>) powerSupplyRepository.findAll(); }
 
-    public PowerSupply findPowerSupplyById(int id) { return powerSupplyRepository.findById(id).orElse(null); }
+    public PowerSupply find(int id) { return powerSupplyRepository.findById(id).orElse(null); }
 
     public void save(PowerSupply powerSupply){ powerSupplyRepository.save(powerSupply); }
 }

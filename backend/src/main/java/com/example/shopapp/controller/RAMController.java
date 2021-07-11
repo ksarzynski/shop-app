@@ -1,14 +1,37 @@
 package com.example.shopapp.controller;
 
-import com.example.shopapp.repository.RAMRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.shopapp.model.RAM;
+import com.example.shopapp.service.RAMService;
+import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import static org.springframework.http.ResponseEntity.status;
 
 @Controller
 @RequestMapping(path="RAM")
+@AllArgsConstructor
 public class RAMController {
 
-    @Autowired
-    private RAMRepository ramRepository;
+    private final RAMService ramService;
+
+    @GetMapping
+    public ResponseEntity<List<RAM>> findAll(){
+        return ResponseEntity.status(HttpStatus.OK).body(ramService.findAll());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<RAM> find(@PathVariable int id){
+        return status(HttpStatus.OK).body(ramService.find(id));
+    }
+
+    @PostMapping
+    public ResponseEntity<Void> add(@RequestBody RAM ram){
+        ramService.save(ram);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
 }

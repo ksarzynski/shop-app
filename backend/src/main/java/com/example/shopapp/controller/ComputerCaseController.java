@@ -20,16 +20,16 @@ public class ComputerCaseController {
 
     @GetMapping
     public ResponseEntity<List<ComputerCase>> findAll(){
-        return ResponseEntity.status(HttpStatus.OK).body(computerCaseService.findAllComputerCases());
+        return ResponseEntity.status(HttpStatus.OK).body(computerCaseService.findAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ComputerCase> findById(@PathVariable int id){
-        return status(HttpStatus.OK).body(computerCaseService.findComputerCaseById(id));
+    public ResponseEntity<ComputerCase> find(@PathVariable int id){
+        return status(HttpStatus.OK).body(computerCaseService.find(id));
     }
 
     @PostMapping
-    public ResponseEntity<Void> addComputerCase(@RequestBody ComputerCase computerCase){
+    public ResponseEntity<Void> add(@RequestBody ComputerCase computerCase){
         computerCaseService.save(computerCase);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }

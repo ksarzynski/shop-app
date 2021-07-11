@@ -13,9 +13,9 @@ public class KeyboardService {
 
     private final KeyboardRepository keyboardRepository;
 
-    public List<Keyboard> findAllKeyboards(){ return (List<Keyboard>) keyboardRepository.findAll(); }
+    public List<Keyboard> findAll(){ return (List<Keyboard>) keyboardRepository.findAll(); }
 
-    public Keyboard findKeyboardById(int id) { return keyboardRepository.findById(id).orElse(null); }
+    public Keyboard find(int id) { return keyboardRepository.findById(id).orElse(null); }
 
     public void save(Keyboard keyboard){ keyboardRepository.save(keyboard); }
 }
