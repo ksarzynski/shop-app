@@ -13,7 +13,7 @@ import java.util.List;
 import static org.springframework.http.ResponseEntity.status;
 
 @Controller
-@RequestMapping(path="RAM")
+@RequestMapping(path="rams")
 @AllArgsConstructor
 public class RAMController {
 
