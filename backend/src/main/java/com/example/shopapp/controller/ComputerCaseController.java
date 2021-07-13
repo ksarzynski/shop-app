@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="computer-cases")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class ComputerCaseController {
 
     private final ComputerCaseService computerCaseService;

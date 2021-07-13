@@ -8,12 +8,13 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @Data
 public abstract class Product {
-    
+
     Long id;
     String category;
     String name;
     double price;
     int amount;
+    String photo;
 
     public abstract void setId(Long id);
 
