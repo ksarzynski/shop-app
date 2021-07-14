@@ -1,72 +1,83 @@
+<app-navbar></app-navbar>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
 
 <!-- Vertical navbar -->
-<div class="vertical-nav bg-white" id="sidebar">
+<div class="vertical-nav bg-dark" id="sidebar">
   <div class="py-4 px-3 mb-4 bg-light">
-    <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+    <div class="media d-flex align-items-center"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" alt="..." width="10%" class="mr-3 rounded-circle img-thumbnail shadow-sm">
       <div class="media-body">
-        <h4 class="m-0">Jason Doe</h4>
-        <p class="font-weight-light text-muted mb-0">Web developer</p>
+        <h4 class="m-0">shop-app</h4>
       </div>
     </div>
   </div>
-
-  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
-
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Produkty</p>
   <ul class="nav flex-column bg-white mb-0">
     <li class="nav-item">
+      <a href="#"  routerLink="/products" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Wszystko
+      </a>
+    </li>
+    <li class="nav-item" routerLink="/computer-cases">
       <a href="#" class="nav-link text-dark font-italic bg-light">
         <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-        Home
+        Obudowy komputera
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-        About
+    <li class="nav-item" routerLink="/cpus">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Procesory
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-        Services
+    <li class="nav-item" routerLink="/gpus">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Karty graficzne
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-        Gallery
+    <li class="nav-item" routerLink="/hard-drives">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Dyski twarde
       </a>
     </li>
-  </ul>
-
-  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
-
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-        Area charts
+    <li class="nav-item" routerLink="/headphones">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Słuchawki
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-        Bar charts
+    <li class="nav-item" routerLink="/keyboards">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Klawiatury
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-        Pie charts
+    <li class="nav-item" routerLink="/motherboards">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Płyty główne
       </a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark font-italic">
-        <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-        Line charts
+    <li class="nav-item" routerLink="/mouse">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Myszki
+      </a>
+    </li>
+    <li class="nav-item" routerLink="/power-supplies">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Zasilacze
+      </a>
+    </li>
+    <li class="nav-item" routerLink="/rams">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Pamięć RAM
       </a>
     </li>
   </ul>

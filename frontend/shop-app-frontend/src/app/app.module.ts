@@ -3,29 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LoginFormComponent } from './form/login-form/login-form.component';
-import { RouterModule, Routes } from '@angular/router';
+import {Router, RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import {FormsModule} from '@angular/forms';
 import {ProductService} from './service/ProductService/product.service';
 import { HttpClientModule } from '@angular/common/http';
-
-const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'home'},
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginFormComponent }
-];
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { ProductComponent } from './component/product/product.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginFormComponent,
     HomeComponent,
+    NavbarComponent,
+    ProductComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
-    RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
