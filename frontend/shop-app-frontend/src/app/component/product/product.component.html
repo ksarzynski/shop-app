@@ -1,1 +1,11 @@
-products
+<div style="height:130px; width:100%; clear:both;"></div>
+<div *ngFor="let product of products">
+  <div class="card" style="width:40%; margin-left: 30%; margin-top: 20px">
+    <img class="card-img-top" src="{{product.photo}}" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">{{product.name}}</h4>
+      <p class="card-text">{{product.price}}</p>
+      <a href="#" class="btn btn-primary" >Przejdź</a>
+    </div>
+  </div>
+</div>

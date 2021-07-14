@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ProductComponent } from './component/product/product.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ComputercaseComponent } from './component/computercase/computercase.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     NavbarComponent,
     ProductComponent,
+    ComputercaseComponent,
   ],
   imports: [
     HttpClientModule,

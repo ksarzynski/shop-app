@@ -13,6 +13,6 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.productService.findAll().subscribe(data => this.products = data);
+    this.productService.findAllProducts().subscribe(data => this.products = data);
   }
 }
