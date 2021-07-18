@@ -5,14 +5,13 @@ import com.example.shopapp.service.KeyboardService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static org.springframework.http.ResponseEntity.status;
 
-@Controller
+@RestController
 @RequestMapping(path="keyboards")
 @AllArgsConstructor
 public class KeyboardController {

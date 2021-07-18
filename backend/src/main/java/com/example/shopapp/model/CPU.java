@@ -16,6 +16,7 @@ import javax.persistence.Id;
 public class CPU extends Product{
 
     private String producer;
+    private String model;
     private String CPUFamily;
     private String Socket;
     private int threads;

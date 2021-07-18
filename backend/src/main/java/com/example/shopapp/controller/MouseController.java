@@ -5,14 +5,13 @@ import com.example.shopapp.service.MouseService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static org.springframework.http.ResponseEntity.status;
 
-@Controller
+@RestController
 @RequestMapping(path="mouse")
 @AllArgsConstructor
 public class MouseController {

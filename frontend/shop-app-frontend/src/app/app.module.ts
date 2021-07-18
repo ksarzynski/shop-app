@@ -11,7 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ProductComponent } from './component/product/product.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ComputercaseComponent } from './component/computercase/computercase.component';
+import { ComputerCaseComponent } from './component/computercase/computer-case.component';
+import { CpuComponent } from './component/cpu/cpu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ComputercaseComponent } from './component/computercase/computercase.com
     HomeComponent,
     NavbarComponent,
     ProductComponent,
-    ComputercaseComponent,
+    ComputerCaseComponent,
+    CpuComponent,
   ],
   imports: [
     HttpClientModule,

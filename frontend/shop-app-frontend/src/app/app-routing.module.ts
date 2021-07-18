@@ -3,14 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from './component/home/home.component';
 import {LoginFormComponent} from './form/login-form/login-form.component';
 import {ProductComponent} from './component/product/product.component';
-import {ComputercaseComponent} from './component/computercase/computercase.component';
+import {ComputerCaseComponent} from './component/computercase/computer-case.component';
+import {CpuComponent} from './component/cpu/cpu.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginFormComponent },
   { path: 'products', component: ProductComponent },
-  { path: 'computer-cases', component: ComputercaseComponent }
+  { path: 'computer-cases', component: ComputerCaseComponent },
+  { path: 'cpus', component: CpuComponent }
 ];
 
 @NgModule({

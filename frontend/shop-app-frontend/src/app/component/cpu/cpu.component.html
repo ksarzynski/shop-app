@@ -1,0 +1,18 @@
+<div style="height:130px; width:100%; clear:both;"></div>
+<div *ngFor="let product of cpus">
+  <div class="card" style="width:40%; margin-left: 30%; margin-top: 20px">
+    <h1 class="card-title" style="margin-left: 10px">{{product.name}}</h1>
+    <img class="card-img-top" src="{{product.photo}}" alt="Card image">
+    <div class="card-body">
+      <h2 class="card-text">{{"Producent: " + product.producer}}</h2>
+      <h2 class="card-text">{{"Model: " + product.model}}</h2>
+      <h2 class="card-text">{{"Rodzina: " + product.CPUFamily}}</h2>
+      <h2 class="card-text">{{"Gnaizdo: " + product.socket}}</h2>
+      <h2 class="card-text">{{"Wątki: " + product.threads}}</h2>
+      <h2 class="card-text">{{"Rdzenie: " + product.cores}}</h2>
+      <h2 class="card-text">{{"Częstotliwość: " + product.frequency}}</h2>
+      <h2 class="card-text">{{"Cena: " + product.price}}</h2>
+      <a href="#" class="btn btn-primary" >Przejdź</a>
+    </div>
+  </div>
+</div>

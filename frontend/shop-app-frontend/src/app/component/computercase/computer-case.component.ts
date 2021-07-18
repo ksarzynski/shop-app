@@ -4,10 +4,10 @@ import {ComputerCase} from '../../model/ComputerCase/computer-case';
 
 @Component({
   selector: 'app-computercase',
-  templateUrl: './computercase.component.html',
-  styleUrls: ['./computercase.component.css']
+  templateUrl: './computer-case.component.html',
+  styleUrls: ['./computer-case.component.css']
 })
-export class ComputercaseComponent implements OnInit {
+export class ComputerCaseComponent implements OnInit {
 
   computerCases: ComputerCase[];
   constructor(private productService: ProductService) { }

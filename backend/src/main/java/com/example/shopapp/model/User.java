@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.time.Instant;
 
 @Entity
 @Data
@@ -13,10 +14,12 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class User {
 
+    private Long id;
+    private String email;
     private String username;
     private String password;
+    private Instant created;
     private boolean enabled;
-    private Long id;
 
     public void setId(Long id) {
         this.id = id;
