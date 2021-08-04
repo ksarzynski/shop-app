@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="keyboards")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class KeyboardController {
 
     private final KeyboardService keyboardService;

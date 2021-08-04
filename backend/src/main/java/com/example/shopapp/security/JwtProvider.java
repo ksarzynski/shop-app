@@ -29,7 +29,7 @@ public class JwtProvider {
         try {
             keyStore = KeyStore.getInstance("JKS");
             InputStream resourceAsStream = getClass().getResourceAsStream("/shopapp.jks");
-            keyStore.load(resourceAsStream, "secret".toCharArray());
+            keyStore.load(resourceAsStream, "123456".toCharArray());
         } catch (KeyStoreException | CertificateException | NoSuchAlgorithmException | IOException e) {
             throw new Exception("Exception occurred while loading keystore", e);
         }
@@ -57,7 +57,7 @@ public class JwtProvider {
 
     private PrivateKey getPrivateKey() throws Exception {
         try {
-            return (PrivateKey) keyStore.getKey("shopapp", "secret".toCharArray());
+            return (PrivateKey) keyStore.getKey("shopapp", "123456".toCharArray());
         } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException e) {
             throw new Exception("Exception occurred while retrieving public key from keystore", e);
         }

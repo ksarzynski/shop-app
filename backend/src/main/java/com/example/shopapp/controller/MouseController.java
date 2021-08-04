@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="mouse")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class MouseController {
 
     private final MouseService mouseService;

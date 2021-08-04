@@ -5,10 +5,12 @@ import {LoginFormComponent} from './form/login-form/login-form.component';
 import {ProductComponent} from './component/product/product.component';
 import {ComputerCaseComponent} from './component/computercase/computer-case.component';
 import {CpuComponent} from './component/cpu/cpu.component';
+import {RegisterFormComponent} from './form/register-form/register-form.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: 'home', component: HomeComponent },
+  { path: 'register', component: RegisterFormComponent },
   { path: 'login', component: LoginFormComponent },
   { path: 'products', component: ProductComponent },
   { path: 'computer-cases', component: ComputerCaseComponent },

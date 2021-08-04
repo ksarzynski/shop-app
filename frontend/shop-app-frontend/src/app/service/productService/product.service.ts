@@ -1,8 +1,8 @@
 import {Observable} from 'rxjs';
-import {Product} from '../../model/Product/product';
+import {Product} from '../../model/product/product';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {ComputerCase} from '../../model/ComputerCase/computer-case';
+import {ComputerCase} from '../../model/computerCase/computer-case';
 import {Cpu} from "../../model/cpu/cpu";
 
 @Injectable({

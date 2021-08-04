@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="motherboards")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class MotherboardController {
 
     private final MotherboardService motherboardService;

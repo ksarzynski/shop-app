@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="headphones")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class HeadphonesController {
 
     private final HeadphonesService headphonesService;

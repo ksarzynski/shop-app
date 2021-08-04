@@ -14,6 +14,7 @@ import static org.springframework.http.ResponseEntity.status;
 @RestController
 @RequestMapping(path="hard-drives")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public class HardDriveController {
 
     private final HardDriveService hardDriveService;

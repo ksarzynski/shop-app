@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductService} from '../../service/ProductService/product.service';
-import {ComputerCase} from '../../model/ComputerCase/computer-case';
+import {ProductService} from '../../service/productService/product.service';
+import {ComputerCase} from '../../model/computerCase/computer-case';
 
 @Component({
   selector: 'app-computercase',
